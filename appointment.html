@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            background-image : url(WhatsApp\ Image\ 2023-09-16\ at\ 14.35.22.jpg);
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .form-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-submit {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-submit:hover {
+            background-color: #0056b3;
+        }
+        .logo{
+            width: 100%;
+            font-weight: bolder;
+            background-color: cadetblue;
+            margin: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo"><h1>MedEase</h1>
+    
+</div>
+
+
+
+    <div class="container">
+        <h3>Doctor Appointment</h3>
+        <form action="process.php" method="post">
+            <label for="date" class="form-label">Date:</label>
+            <input type="date" id="date" name="date" class="form-input" required>
+            
+            <label for="category" class="form-label">Disease Category:</label>
+            <select id="category" name="category" class="form-input" required>
+                <option value="General">General</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Reproductive health and child birth">Reproductive health and child birth</option>
+                <option value="Respiratory">Respiratory</option>
+                <option value="Fever">Fever</option>
+                <option value="Infection">Infection</option>
+            </select>
+            
+            <label for="time" class="form-label">Preferred  Appointment Time:</label>
+            <input type="time" id="time" name="time" class="form-input" required>
+
+            <label for="hospital" class="form-label">Select Hospital:</label>
+            <select id="hospital" name="hospital" class="form-input" required>
+                <option value="Regional Hospital,Una">Regional Hospital,Una</option>
+                <option value="Goverment Regional Hospital,Sonal">Goverment Regional Hospital,Sonal</option>
+                <option value="Goverment Civil Hospital,Baijnath">Goverment Civil Hospital,Baijnath</option>
+                <option value="Civil Hospital, Nurpur">Civil Hospital, Nurpur</option>
+                <option value="Civil Hospital,Palampur">Civil Hospital,Palampur</option>
+                <option value="Kamla Nehru Hospital,Shimla">Kamla Nehru Hospital,Shimla</option>
+                <option value="Civil Hospital,Dehra Gopipur">Civil Hospital,Dehra Gopipur</option>
+                <option value="Civil Hospital,Chail">Civil Hospital,Chail</option>
+                <option value="Civil hospital,Kangra">Civil hospital,Kangra</option>
+                <option value="Civil hospital,Kullu">Civil hospital,Kullu</option>
+                <option value="Goverment hospital,Aloh Buhla">Civil hospital,Aloh Buhla</option>
+            </select>
+
+
+            <input type="submit" value="Submit Appointment" class="form-submit">
+        </form>
+    </div>
+</body>
+</html>
